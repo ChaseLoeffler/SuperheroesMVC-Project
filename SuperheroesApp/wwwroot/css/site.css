@@ -22,6 +22,10 @@ body {
     background-color: cyan;
 }
 
+nav{
+    background-color:darkcyan;
+}
+
 
 .background-img {
     background-repeat: no-repeat;
