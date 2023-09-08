@@ -65,7 +65,8 @@ namespace SuperheroesApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, SuperHero hero)
         {
-
+            _context.Update(hero);
+            _context.SaveChanges();
             try
             {
                 return RedirectToAction(nameof(Index));
@@ -88,6 +89,8 @@ namespace SuperheroesApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, SuperHero hero)
         {
+            _context.Remove(hero);
+            _context.SaveChanges();
             try
             {
                 return RedirectToAction(nameof(Index));
