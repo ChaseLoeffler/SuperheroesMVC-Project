@@ -1,0 +1,1 @@
+SELECT * FROM superheroes_app.superheroes;
