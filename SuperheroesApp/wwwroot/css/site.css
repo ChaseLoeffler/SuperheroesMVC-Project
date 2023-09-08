@@ -22,8 +22,13 @@ body {
     background-color: cyan;
 }
 
+
 .background-img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.name-bold {
+    font-weight:600;
 }
